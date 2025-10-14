@@ -1,0 +1,5 @@
+.vscode
+*.vcxproj*
+*.sln
+.vs
+bin/
