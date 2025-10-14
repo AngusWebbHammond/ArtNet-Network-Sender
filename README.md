@@ -3,6 +3,8 @@
 **ArtNet Network Sender** is a lightweight C++ application for sending Art-Net DMX packets over a network.
 Designed to work on Windows (using Winsock2).
 
+This was created as a project piece to learn more about using sockets and networking, it is not intended to be used in production.
+
 This project is licensed under the MIT License, see [LICENSE](/LICENSE).
 
 ---
