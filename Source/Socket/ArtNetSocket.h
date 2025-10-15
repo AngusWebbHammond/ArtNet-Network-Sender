@@ -21,15 +21,19 @@
 namespace ArtNetSender {
 	class ArtNetSocket {
 	public:
-		ArtNetSocket();
 		ArtNetSocket(std::string ip, std::string subnetMask);
 		~ArtNetSocket();
 
 		ArtNetSocket(ArtNetSocket&) = delete;
 		ArtNetSocket(ArtNetSocket&&) = delete;
 
+		void setupSocket();
+
 		void sendPacket(ArtNetDMXPacket& packet);
 		void sendPacketForDuration(ArtNetDMXPacket& packet, std::uint32_t durationMilliseconds);
+
+		std::string getBroadcastIP() const;
+
 
 	private:
 		std::string m_ip;
